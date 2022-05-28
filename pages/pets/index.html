@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelter-Pets</title>
+    <link rel="shortcut icon" href="../../assets/icons/icons8-собака-64.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="../../assets/scripts/main.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="../main/index.html" class="logo">
+          <h1 class="logo__title">Cozy House</h1>
+          <p class="logo__description">Shelter for pets in Boston</p>
+        </a>
+        <div class="overlay"></div>
+        <nav class="header__nav">
+          <a href="javascript:void:0" class="logo">
+            <h1 class="logo__title">Cozy House</h1>
+            <p class="logo__description">Shelter for pets in Boston</p>
+          </a>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="../main/index.html" class="header__nav-link">About the shelter</a></li>
+            <li class="header__nav-item active"><a href="javascript:void(0)" class="header__nav-link active">Our pets</a></li>
+            <li class="header__nav-item"><a href="../main/index.html#help" class="header__nav-link">Help the shelter</a></li>
+            <li class="header__nav-item"><a href="#footer" class="header__nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <span class="header__nav-btn"></span>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="section our-friends">
+          <h2 class="section__title title_center">Our friends who<br />are looking for a house</h2>
+          <div class="pagination">
+            <div class="content-wrap swiper-wrapper">
+            </div>
+          </div>
+          <div class="buttons-wrap">
+            <span class="btn btn_outline start disabled"><<</span>
+            <span class="btn btn_outline back disabled"><</span>
+            <span class="btn btn_fill page-number">1</span>
+            <span class="btn btn_outline next">></span>
+            <span class="btn btn_outline end">>></span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="contacts">
+          <h3 class="footer__title">For questions<br>and suggestions</h3>
+          <a href="mailto:email@shelter.com" class="contacts__item mail">email@shelter.com</a>
+          <a href="tel:+136745677554" class="contacts__item phone">+13 674 567 75 54</a>
+        </div>
+        <div class="adresses">
+          <h3 class="footer__title">We are waiting<br>for your visit</h3>
+          <a href="https://goo.gl/maps/yN4NJcuiXSPcR2KQ9" class="contacts__item" target="_blank">1 Central Street, Boston<br>(entrance from the store)</a>
+          <a href="https://goo.gl/maps/pPBDR6i4KEcUSr7GA" class="contacts__item" target="_blank">18 South Park, London</a>
+        </div>
+        <img src="../../assets/images/footer-puppy.png" alt="dog" class="footer__img" width="300" height="310">
+      </div>
+    </footer>
+    <div class="overlay-modal">
+      <div class="modal">
+        <button class="btn-modal-close"></button>
+        <div class="modal__img">
+          <img src="../../assets/images/pets-jennifer.jpg" alt="Jennifer">
+        </div>
+        <div class="modal__content">
+          <h3 class="modal__title">Jennifer</h3>
+          <p class="modal__subtitle">Dog - Labrador</p>
+          <p class="modal__description">
+            Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.
+          </p>
+          <ul class="modal__list">
+            <li class="modal__item"><b>Age:</b> 2 months</li>
+            <li class="modal__item"><b>Inoculations:</b> none</li>
+            <li class="modal__item"><b>Diseases:</b> none</li>
+            <li class="modal__item"><b>Parasites:</b> none</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
